@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingsActivity">
+
+    <ImageView
+        android:id="@+id/imageViewFon2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        android:tint="?attr/colorPrimary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/moreorless"
+        android:textSize="32sp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/shrift"
+        android:textColor="?attr/colorOnPrimary"
+        app:layout_constraintBottom_toTopOf="@id/textViewDice"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewDice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/dice"
+        android:textSize="32sp"
+        android:fontFamily="@font/shrift"
+        android:textColor="?attr/colorPrimaryVariant"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewMore"/>
+
+    <TextView
+        android:id="@+id/textViewSettings"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/shrift"
+        android:text="@string/settings"
+        android:textColor="?attr/colorOnPrimary"
+        android:textSize="40sp"
+        android:textStyle="italic|bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewDice"/>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSettings">
+
+        <TextView
+            android:id="@+id/textViewNotificate"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_weight="0.8"
+            android:fontFamily="@font/shrift"
+            android:textColor="?attr/colorSecondary"
+            android:text="@string/notificate"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_one"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:layout_marginEnd="30dp"
+            android:textSize="32sp"
+            app:trackTint="@color/main_light"
+            app:thumbTint="?attr/colorPrimaryVariant"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:checked="false"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:id="@+id/lay2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/lay">
+
+        <TextView
+            android:id="@+id/textViewSound"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_margin="20dp"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_weight="0.8"
+            android:textColor="?attr/colorSecondary"
+            android:fontFamily="@font/shrift"
+            android:text="@string/sound"
+            android:textSize="20sp"
+            android:textStyle="italic|bold" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/switch_two"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:textAlignment="center"
+            android:layout_gravity="center"
+            android:layout_weight="0.2"
+            android:layout_marginEnd="30dp"
+            android:textSize="32sp"
+            app:trackTint="@color/main_light"
+            app:thumbTint="?attr/colorPrimaryVariant"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
+            android:checked="false"/>
+
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

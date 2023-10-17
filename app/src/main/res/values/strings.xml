@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">MoreOrLessDice</string>
+    <string name="moreorless">MoreOrLess</string>
+    <string name="dice">Dice</string>
+    <string name="play_and_win">Play and Win!</string>
+    <string name="play">Play</string>
+    <string name="rules">Rules</string>
+    <string name="settings">SETTINGS</string>
+    <string name="notificate">NOTIFICATE</string>
+    <string name="sound">SOUND</string>
+    <string name="more">More</string>
+    <string name="less">Less</string>
+    <string name="value">Value</string>
+</resources>

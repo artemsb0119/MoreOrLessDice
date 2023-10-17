@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "812821511286",
+    "project_id": "moreorlessdice",
+    "storage_bucket": "moreorlessdice.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:812821511286:android:f7141d3db497adba8bf357",
+        "android_client_info": {
+          "package_name": "com.example.moreorlessdice"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDi0dE2S4TGLE-kQA_04e_nFoJJG3nXJOw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
